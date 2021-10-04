@@ -361,7 +361,7 @@ img {
   display: inline-block;
   font-size: 28px;
   font-weight: 600;
-  color: var(--text-black-700);
+  color: var(--text-black-600);
   padding: 5px 30px;
   text-transform: capitalize;
   border-radius: 30px;
@@ -411,7 +411,7 @@ img {
 .home-section .home-text h1 {
   font-size: 20px;
   font-weight: 500;
-  color: var(--text-black-700);
+  color: var(--text-black-600);
   margin: 0;
   text-transform: capitalize;
 }
@@ -617,8 +617,8 @@ img {
   left: -30px;
 }
 .about-section .timeline .timeline-item-inner .icon {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   color: var(--skin-color);
   border: 1px solid var(--bg-black-100);
@@ -630,10 +630,10 @@ img {
   top: 18px;
 }
 .about-section .timeline .timeline-item:nth-child(odd) .icon {
-  right: -60px;
+  right: -70px;
 }
 .about-section .timeline .timeline-item:nth-child(even) .icon {
-  left: -60px;
+  left: -70px;
 }
 .about-section .timeline .timeline-item-inner span {
   font-weight: 500;
@@ -691,6 +691,7 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
+  color: var(--text-black-600);
 }
 .service-section .service-item-inner .icon::after {
   content: "";
@@ -713,7 +714,7 @@ img {
   line-height: 60px;
   transition: all 0.3s ease;
 }
-.service-section .service-item-inner:hover {
+.service-section .service-item-inner:hover .icon {
   color: var(--skin-color);
   cursor: pointer;
 }
@@ -892,3 +893,5 @@ img {
   text-align: right;
   padding: 0 15px;
 }
+
+/* theme switcher */

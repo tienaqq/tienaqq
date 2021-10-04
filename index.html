@@ -4,12 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tien Resume</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/style-switcher.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./css/color-1.css"
+      class="alternate-style"
+      title="color-1"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <script src="./js/all.min.js"></script>
   </head>
   <body>
+    <!-- loading start -->
+    <div class="preloader">
+      <div class="loader"></div>
+      <div class="loader-text">
+        <span>loading...</span>
+      </div>
+    </div>
+    <!-- loading end -->
+
     <!-- header -->
     <header class="header">
       <div class="container">
@@ -338,7 +386,7 @@
                 <i class="fas fa-mobile-alt"></i>
               </div>
               <h3>Responsive design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p></p>
             </div>
           </div>
           <div class="service-item">
@@ -347,7 +395,16 @@
                 <i class="fas fa-laptop-code"></i>
               </div>
               <h3>Web design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p></p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="far fa-file-powerpoint"></i>
+              </div>
+              <h3>Present</h3>
+              <p></p>
             </div>
           </div>
           <div class="service-item">
@@ -355,35 +412,26 @@
               <div class="icon inner-shadow">
                 <i class="fas fa-mobile-alt"></i>
               </div>
-              <h3>Responsive design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Working in group</h3>
+              <p></p>
             </div>
           </div>
           <div class="service-item">
             <div class="service-item-inner outer-shadow">
               <div class="icon inner-shadow">
-                <i class="fas fa-mobile-alt"></i>
+                <i class="fas fa-cloud-upload-alt"></i>
               </div>
-              <h3>Responsive design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Deployment</h3>
+              <p></p>
             </div>
           </div>
           <div class="service-item">
             <div class="service-item-inner outer-shadow">
               <div class="icon inner-shadow">
-                <i class="fas fa-mobile-alt"></i>
+                <i class="fab fa-github-square"></i>
               </div>
-              <h3>Responsive design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item-inner outer-shadow">
-              <div class="icon inner-shadow">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <h3>Responsive design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h3>Git</h3>
+              <p></p>
             </div>
           </div>
           <!-- service item end -->
@@ -543,7 +591,28 @@
     </section>
     <!-- contact section end -->
 
+    <!-- theme start -->
+    <div class="style-switcher outer-shadow">
+      <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon outer-shadow hover-in-shadow">
+        <i class="fas fa-moon sun-light"></i>
+      </div>
+
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+    <!-- theme end -->
+
     <!-- main.js -->
     <script src="/js/main.js"></script>
+    <script src="/js/style-switcher.js"></script>
   </body>
 </html>

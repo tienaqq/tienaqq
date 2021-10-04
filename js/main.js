@@ -33,7 +33,7 @@
         var element = document.getElementById(`${hash.slice(1)}`);
         element.scrollIntoView({
           behavior: "smooth",
-          block: "end",
+          block: "start",
           inline: "nearest",
         });
       }
@@ -67,3 +67,11 @@
     }
   });
 })();
+
+// loader
+window.addEventListener("load", () => {
+  document.querySelector(".preloader").classList.add("fade-out");
+  setTimeout(() => {
+    document.querySelector(".preloader").style.display = "none";
+  }, 600);
+});
