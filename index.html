@@ -30,16 +30,29 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#" class="inner-shadow active">home</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">services</a></li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">portfolio</a>
+            <a href="#home" class="link-item inner-shadow active">home</a>
           </li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">testimonial</a>
+            <a href="#about" class="link-item outer-shadow hover-in-shadow"
+              >about</a
+            >
           </li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">contact</a></li>
+          <li>
+            <a href="#services" class="link-item outer-shadow hover-in-shadow"
+              >services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="link-item outer-shadow hover-in-shadow"
+              >contact</a
+            >
+          </li>
         </ul>
       </div>
       <!-- copyright text -->
@@ -47,8 +60,10 @@
     </nav>
     <!-- navigation menu end -->
 
+    <div class="fade-out-effect"></div>
+
     <!-- home section start -->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
       <!-- effect wrap start -->
       <div class="effect-wrap">
         <div class="effect effect-1"></div>
@@ -104,9 +119,11 @@
         <div class="row full-screen align-items-center">
           <div class="home-text">
             <p>Hello</p>
-            <h2>I'm Taqq</h2>
+            <h2>I'm Dat</h2>
             <h1>Front-end developer</h1>
-            <a href="" class="btn-1 outer-shadow hover-in-shadow"
+            <a
+              href="#about"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
               >More about me</a
             >
           </div>
@@ -121,7 +138,7 @@
     <!-- home section end -->
 
     <!-- about section start -->
-    <section class="about-section section">
+    <section class="about-section section" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -131,23 +148,17 @@
         <div class="row">
           <div class="about-img">
             <div class="img-box inner-shadow">
-              <img src="./img/avatar.png" alt="photo" class="outer-shadow" />
+              <img src="./img/about.jpg" alt="photo" class="outer-shadow" />
             </div>
           </div>
           <div class="about-info">
             <p>
-              <span>Hi! My name is Dat. I am a front-end developer.</span> Lorem
-              ipsum dolor, sit amet consectetur adipisicing elit. Rerum mollitia
-              numquam, laboriosam consequuntur repellendus fuga molestias
-              excepturi modi quam incidunt perspiciatis nostrum labore
-              temporibus, dolore beatae laudantium similique eos fugiat!
+              <span>Hi! My name is Dat. I am a front-end developer.</span>
+              Working in a dynamic and professional environment, can learn and
+              improve knowledge of HTML, CSS, Javascript to become a
+              professional front-end developer.
             </p>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus ipsum ex, sunt dolorem ratione cupiditate animi voluptas
-              rem porro expedita distinctio quis, ad eos amet praesentium fugit
-              beatae dicta accusantium!
-            </p>
+            <p>More practice with JavaScript libraries like ReactJS.</p>
             <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow"
               >Download CV</a
             >
@@ -179,20 +190,18 @@
         <!-- about tabs start -->
         <div class="row">
           <div class="about-tabs">
-            <span class="tab-item outer-shadow active" data-target=".skill"
-              >skill</span
+            <span class="tab-item outer-shadow active" data-target=".skills"
+              >skills</span
             >
-            <span class="tab-item" data-target=".experience">experience</span>
-            <span class="tab-item" data-target=".education">education</span>
+            <span class="tab-item" data-target=".experience">Timeline</span>
           </div>
         </div>
         <!-- about tabs end -->
 
         <!-- skills start -->
         <div class="row">
-          <div class="skills tab-content">
+          <div class="skills tab-content active" id="skills">
             <div class="row">
-              <!-- skill item start -->
               <div class="skill-item">
                 <p>Html</p>
                 <div class="progress inner-shadow">
@@ -201,6 +210,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="skill-item">
                 <p>Javascript</p>
                 <div class="progress inner-shadow">
@@ -209,6 +219,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="skill-item">
                 <p>Css</p>
                 <div class="progress inner-shadow">
@@ -241,15 +252,13 @@
                   </div>
                 </div>
               </div>
-              <!-- skill item end -->
             </div>
           </div>
         </div>
         <!-- skills end -->
 
-        <!-- experience start -->
         <div class="row">
-          <div class="experience tab-content">
+          <div class="experience tab-content" id="experience">
             <div class="row">
               <div class="timeline">
                 <div class="row">
@@ -257,36 +266,48 @@
                   <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="far fa-circle icon"></i>
-                      <span>Sep, 2020</span>
-                      <h3>Fresher</h3>
-                      <h4>FPT Software</h4>
+                      <span>Sep 2016 - Present</span>
+                      <h3>Student</h3>
+                      <h4>FPT University</h4>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor aperiam possimus.
+                        Programming languages: Java, JS, HTML, CSS.<br />
+                        Data query language: SQL.
                       </p>
                     </div>
                   </div>
+
                   <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="far fa-circle icon"></i>
-                      <span>Sep, 2020</span>
-                      <h3>Fresher</h3>
+                      <span>May 2020 - Sep 2020</span>
+                      <h3>Internship</h3>
                       <h4>FPT Software</h4>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor aperiam possimus.
+                        Develop Mock project with trainees of Fresher Academy
+                        Management System department.From there, develop
+                        teamwork skills, software development process,
+                        familiarize yourself with Java Spring Boot framework.
                       </p>
                     </div>
                   </div>
+
                   <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="far fa-circle icon"></i>
-                      <span>Sep, 2020</span>
-                      <h3>Fresher</h3>
-                      <h4>FPT Software</h4>
+                      <span>Apr 2021 - Aug 2021</span>
+                      <h3>Capstone</h3>
+                      <h4>FPT University</h4>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor aperiam possimus.
+                        <b style="font-weight: 600"
+                          >Flashcard - A learning tool system.</b
+                        ><br />
+                        Context: In the current context, especially the
+                        prolonged covid-19 epidemic, it is essential to build
+                        online tools to help students self-study and review
+                        their knowledge.<br />
+                        Main task: front-end wed developer, deployment.<br />
+                        Technologies used: ReactJS, NodeJS, Firebase, MySQL and
+                        Ubuntu EC2 on AWS.
                       </p>
                     </div>
                   </div>
@@ -297,11 +318,232 @@
           </div>
         </div>
         <!-- experience end -->
-
-        <!-- education start -->
-        <!-- education end -->
       </div>
     </section>
     <!-- about section end -->
+
+    <!-- service section start -->
+    <section class="service-section section" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="Services">What i do</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- service item start -->
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3>Web design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-item-inner outer-shadow">
+              <div class="icon inner-shadow">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+          <!-- service item end -->
+        </div>
+      </div>
+    </section>
+    <!-- service section end -->
+
+    <!-- portfolio section start -->
+    <section class="portfolio-section section" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="portfolio">Latest Works</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="portfolio-filter">
+            <span class="filter-item outer-shadow active" data-target="all"
+              >all</span
+            >
+            <span class="filter-item" data-target="web-application"
+              >web application</span
+            >
+            <span class="filter-item" data-target="photoshop">photoshop</span>
+            <span class="filter-item" data-target="mobile-app">mobile app</span>
+            <span class="filter-item" data-target="e-commerce">e commerce</span>
+          </div>
+        </div>
+
+        <div class="row portfolio-items">
+          <div class="portfolio-item" data-category="web-application">
+            <div class="portfolio-item-inner outer-shadow">
+              <div class="portfolio-item-img">
+                <img
+                  src="./img/avatar.png"
+                  alt="photo"
+                  data-screenshots="./img/avatar.png"
+                />
+                <span class="view-project">view project</span>
+              </div>
+              <p class="portfolio-item-title">personal portfolio</p>
+
+              <div class="portfolio-item-details">
+                <div class="row">
+                  <div class="description">
+                    <h3>Project Brief</h3>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Ullam neque natus dolores praesentium! Totam minima
+                      asperiores facilis natus rerum repudiandae laboriosam
+                      magnam, quasi eius, tenetur adipisci quidem laborum!
+                      Officia, perferendis!
+                    </p>
+                  </div>
+                  <div class="info">
+                    <h3>Project info</h3>
+                    <ul>
+                      <li>Date - <span>2020</span></li>
+                      <li>Date - <span>2020</span></li>
+                      <li>Date - <span>2020</span></li>
+                      <li>Date - <span>2020</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section end -->
+
+    <!-- contact section start -->
+    <section class="contact-section section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="contact">Get In Touch</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-phone icon"></i>
+              <span>Phone</span>
+              <p>0867677061</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-envelope icon"></i>
+              <span>Email</span>
+              <p>tienaqq@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-inner outer-shadow">
+              <i class="fas fa-map-marker-alt icon"></i>
+              <span>Address</span>
+              <p>District 9, Ho Chi Minh</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="contact-form">
+            <form action="">
+              <div class="row">
+                <div class="w-50">
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      class="input-control"
+                    />
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <textarea
+                      name=""
+                      id=""
+                      class="input-control"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="submit-btn">
+            <button type="submit" class="btn-1 outer-shadow hover-in-shadow">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- main.js -->
+    <script src="/js/main.js"></script>
   </body>
 </html>
